@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventbrite - Discover the Best Local Events &amp; Things to Do</title>
     <script src="https://kit.fontawesome.com/58088035f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=theater_comedy" />
 
     <style>
         *{
@@ -48,11 +49,88 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 100px;
+            margin-top: 60px;
+            border-top-left-radius: 1rem;
+           
             /* background-image: url("images/eventbrite-crowd.webp"); */
         }
 
-        
+        .img img{
+             width: 1800px;
+             height: 600px;
+        }
+
+        .img{
+            overflow: hidden;
+            background-color: black;
+            border: 1px solid gray;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            /* padding: 12px; */
+        }
+  .lifestyle{
+            height: auto    ;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 60px;
+          
+  }
+
+  .event-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: 1px solid gray ;
+    border-radius: 4rem;
+    padding: 25px;
+     margin-right: 100px;
+
+
+     &:hover{
+        background-color: #DEE5FF;
+     }
+  }
+
+  .event-box  p{
+     position: absolute;
+     bottom:-1px;
+     font-size: 15px;
+     margin-left: -40px;
+     color: black;
+     font-weight: bolder;
+ 
+  }
+
+  .browse-events{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabs{
+    display: flex;
+    column-gap: 50px;
+    margin-top: 25px;
+    list-style: none;
+    font-weight: bolder;
+  }
+
+.card{
+    width: 300px;
+    border: 1px solid gray;
+    /* padding: 15px; */
+    border-radius: 1rem;
+    overflow: hidden;
+    &:hover{
+        box-shadow: inset 0px 0px 12px blue;
+    }
+}
+.content{
+    padding: 10px;
+}    
     </style>
 </head>
 <body>
@@ -84,8 +162,169 @@
     </header>
 
     <div class="cover">
-            <img src="/images/eventbrite-crowd.webp" alt="" class="img">  
+            <div class="img">
+                <img src="/images/eventbrite-crowd.webp" alt="" >  
+            </div>
     </div>
+
+    <div class="lifestyle">
+
+        <div class="event-box">
+          <span class="material-symbols-outlined" style="font-size: 80px;">theater_comedy</span>
+         <p>Performing and Visual Art</p>
+        </div>
+
+         <div class="event-box">
+          <span class="material-symbols-outlined" style="font-size: 80px;">theater_comedy</span>
+         <p>Performing and Visual Art</p>
+        </div>
+
+        <div class="event-box">
+          <span class="material-symbols-outlined" style="font-size: 80px;">theater_comedy</span>
+         <p>Performing and Visual Art</p>
+        </div>
+
+        <div class="event-box">
+          <span class="material-symbols-outlined" style="font-size: 80px;">theater_comedy</span>
+         <p>Performing and Visual Art</p>
+        </div>
+
+        <div class="event-box">
+          <span class="material-symbols-outlined" style="font-size: 80px;">theater_comedy</span>
+         <p>Performing and Visual Art</p>
+        </div>
+    </div>
+
+
+    <main>
+         <hr style="margin-top: 70px;">
+    <section class="browse-events">
+       
+       
+         <label for="events" style="font-weight: bolder;">Browsing events in</label>
+         
+        <form action="" method="get" class="form" style="border: 0px;">
+                
+                 <img src="icons/location_on_24dp.png" alt="" >
+                <input type="text" name="location" placeholder="Choose a Location" >
+               
+            </form>
+       
+
+    </section>
+     <hr style="margin-top: 10px;">
+
+     <section class="tab-list">
+
+       <ul class="tabs">
+        <li style="border-bottom: 5px solid blue; color: blue;">All</li>
+        <li>For you</li>
+        <li>Today</li>
+        <li>This weekend</li>
+       </ul>
+     </section>
+
+
+  <section>
+    
+    <ul class="tabs">
+       <li>
+        <h2>Events in</h2>
+       </li>
+
+    <li style="display: flex; gap: 12px; flex-wrap: wrap;">
+
+        <div class="card">
+            <img src="/images/eventbrite-crowd.webp" alt="" height="300px" width="300px">
+             <div class="content">
+            <h5>Almost full</h5>
+             <h2>Machine Learning and Generative AI System Design Workshop</h2>
+             <h5>Saturday • 2:30 PM GMT</h5>
+             <h5>From $257.93</h5>
+             <p>Promoted</p>
+             </div>
+        </div>
+
+          <div class="card">
+            <img src="/images/eventbrite-crowd.webp" alt="" height="300px" width="300px">
+             <div class="content">
+            <h5>Almost full</h5>
+             <h2>Machine Learning and Generative AI System Design Workshop</h2>
+             <h5>Saturday • 2:30 PM GMT</h5>
+             <h5>From $257.93</h5>
+             <p>Promoted</p>
+             </div>
+        </div>
+
+          <div class="card">
+            <img src="/images/eventbrite-crowd.webp" alt="" height="300px" width="300px">
+             <div class="content">
+            <h5>Almost full</h5>
+             <h2>Machine Learning and Generative AI System Design Workshop</h2>
+             <h5>Saturday • 2:30 PM GMT</h5>
+             <h5>From $257.93</h5>
+             <p>Promoted</p>
+             </div>
+        </div>
+
+         <div class="card">
+            <img src="/images/eventbrite-crowd.webp" alt="" height="300px" width="300px">
+             <div class="content">
+            <h5>Almost full</h5>
+             <h2>Machine Learning and Generative AI System Design Workshop</h2>
+             <h5>Saturday • 2:30 PM GMT</h5>
+             <h5>From $257.93</h5>
+             <p>Promoted</p>
+             </div>
+        </div>
+
+         <div class="card">
+            <img src="/images/eventbrite-crowd.webp" alt="" height="300px" width="300px">
+             <div class="content">
+            <h5>Almost full</h5>
+             <h2>Machine Learning and Generative AI System Design Workshop</h2>
+             <h5>Saturday • 2:30 PM GMT</h5>
+             <h5>From $257.93</h5>
+             <p>Promoted</p>
+             </div>
+        </div>
+         <div class="card">
+            <img src="/images/eventbrite-crowd.webp" alt="" height="300px" width="300px">
+             <div class="content">
+            <h5>Almost full</h5>
+             <h2>Machine Learning and Generative AI System Design Workshop</h2>
+             <h5>Saturday • 2:30 PM GMT</h5>
+             <h5>From $257.93</h5>
+             <p>Promoted</p>
+             </div>
+        </div>
+         <div class="card">
+            <img src="/images/eventbrite-crowd.webp" alt="" height="300px" width="300px">
+             <div class="content">
+            <h5>Almost full</h5>
+             <h2>Machine Learning and Generative AI System Design Workshop</h2>
+             <h5>Saturday • 2:30 PM GMT</h5>
+             <h5>From $257.93</h5>
+             <p>Promoted</p>
+             </div>
+        </div>
+
+          <div class="card">
+            <img src="/images/eventbrite-crowd.webp" alt="" height="300px" width="300px">
+             <div class="content">
+            <h5>Almost full</h5>
+             <h2>Machine Learning and Generative AI System Design Workshop</h2>
+             <h5>Saturday • 2:30 PM GMT</h5>
+             <h5>From $257.93</h5>
+             <p>Promoted</p>
+             </div>
+        </div>
+
+    </li>
+       </ul>
+  </section>
+
+    </main>
 
 </body>
 </html>

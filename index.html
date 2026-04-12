@@ -38,11 +38,6 @@
             font-size: 20px; 
         }
 
-        main{
-            /* margin-left: 300px;
-            margin-right: 300px; */
-        }
-
         .cover{   
             height: auto    ;
             display: flex;
@@ -152,33 +147,80 @@
 }
 .usstates img{
     width: 400px;
-    height: 250px;
+    height: 240px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 
     &:hover{
         height: 200px;
+        transition-duration: 1s;
     }
 
 }
 
 .usstates div{
+    height: 250px;
+    background-color: #F05537;
+    position: relative;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     
     &:hover{
         background-color: #F05537;
-        
+        transition-duration: 1s;
     }
 }
 
 .usstates h2{
-    position: fixed;
-    bottom: 50px;
+    position: absolute;
+    bottom: 35px;
+    font-family: sans-serif;
     margin-left: 20px;
     font-size: xx-large;
     color: white;
-    z-index: 1;
+}
+
+footer{
+    background-color: darkblue;
+    color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer div:first-child{
+    display: flex;
+    flex-direction: start;
+    justify-content: space-around;
+}
+
+footer div:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer div:first-child ul{
+    display: flex;
+    flex-direction: column;
+}
+footer div:first-child ul ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer li{
+    list-style: none;
 }
     </style>
 </head>
@@ -394,7 +436,7 @@
         </div>
         <div>
             <img src="./images/chicago.png" alt="" srcset="">
-            <h2>chicago</h2>
+            <h2>Chicago</h2>
         </div>
         <div>
             <img src="./images/washington.png" alt="" srcset="">
@@ -448,6 +490,105 @@
   </section>
 
     </main>
+
+
+    <footer>
+
+        <div>
+            <ul>
+                <h2>Use Eventbrite</h2>
+                <ul>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>Facebook</li>
+                    <li><a href=""></a>Facebook</li>
+                </ul>
+            </ul>
+            <ul>
+                <h2>Plan Event</h2>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                </ul>
+            </ul>
+            <ul>
+                <h2>Find Event</h2>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Facebook</a></li>
+                </ul>
+            </ul>
+            <ul>
+                <h2>Connect With Us</h2>
+                <ul>
+                    <li><a href="">Contact Support</a></li>
+                    <li><a href="">Contact Sales</a></li>
+                    <li><a href="https://x.com">X</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://linkedin.com">LinkedIn</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://tiktop.com">Tik Tok</a></li>
+                </ul>
+            </ul>
+        </div>
+
+        <div>
+
+            <h2>&copy; 2026 Eventbrite</h2>
+
+            <div>
+                <ul>
+                    <li><a href="">How it works</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Contact Support</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Impact</a></li>
+                    <li><a href="">Investors</a></li>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Developers</a></li>
+                    <li><a href="">Status</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Accessibility</a></li>
+                    <li><a href="">Cookies</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Manage Cookies Preferences</a></li>
+                    <li><a href="">Do Not Sell or Share My Personal Information</a></li>
+                </ul>
+            </div>
+
+            <h2>United States</h2>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
